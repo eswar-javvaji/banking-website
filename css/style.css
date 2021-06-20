@@ -1,0 +1,188 @@
+
+#top-row{
+    background-color:#264653;
+    font-family:dancing script;
+    color:#e76f51;
+    font-size:1.75rem;
+}
+#imgtop{
+   
+   box-shadow: -10px 3px 5px black;
+   border-radius: 50% 0 0 50%;
+}
+#row2{
+    background-color:#2a9d8f;
+}
+#cardimg{
+    
+    box-shadow: 10px 3px 5px black;
+    border-radius: 0 50% 50% 0;
+ }
+#mainbar{
+    background-color: #c9e4ca;
+    font-family:raleway;
+    font-weight: 600;
+    color:black;
+}
+
+ h2{
+     font-family: raleway;
+     font-size:2rem;
+     color:#a2d2ff;
+     text-decoration: underline;
+ }
+
+ .button--pandora {
+    width:50%;
+	background: #000;
+	font-weight: 700;
+	padding: 0;
+	border-radius: 5px;
+    margin:10px;
+    margin-left: 100px;
+}
+
+.button--pandora span {
+	display: block;
+	background: #a7a7a7;
+	padding: 1rem 1.5rem;
+	border: 1px solid #000;
+	border-radius: 5px;
+	transform: translate3d(-4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--pandora:hover span {
+	transform: translate3d(-8px, -8px, 0);
+}
+
+
+footer{
+  background-color:#ee6c4d;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  
+}
+footer li{
+  display: inline-block;
+  padding: 0 100px;
+}
+@media(max-width:770px){
+    #imgtop{
+   
+        border:2PX;
+        border-radius: 30%;
+     }
+     #cardimg{
+        border:5px;
+        border-radius: 30%;
+     }
+     #top-row{
+        
+        font-size:1rem;
+    }
+    h2{
+        font-size:1.25rem;
+    }
+    .button--pandora {
+       font-size:1rem;
+    }
+    .button--pandora span {
+    
+        padding: 0.5rem;
+        
+    }
+    footer li{
+      padding: 0;
+    }
+    
+
+}
+
+
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+ 
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+a{
+    color:black;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+
